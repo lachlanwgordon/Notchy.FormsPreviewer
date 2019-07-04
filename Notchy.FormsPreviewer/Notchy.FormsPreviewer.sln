@@ -1,8 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Notchy.FormsPreviewer.Shared", "Notchy.FormsPreviewer.Shared\Notchy.FormsPreviewer.Shared.shproj", "{E575DDE7-2433-481E-96D2-67FADEF30F6B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notchy.FormsPreviewer.iOS", "Notchy.FormsPreviewer.iOS\Notchy.FormsPreviewer.iOS.csproj", "{5C4CFDCE-7DC1-44A8-8A6D-87E335D98B43}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notchy.FormsPreviewer.Android", "Notchy.FormsPreviewer.Android\Notchy.FormsPreviewer.Android.csproj", "{E76C5FB5-DF45-40D2-A83A-08DD724B1ACD}"
