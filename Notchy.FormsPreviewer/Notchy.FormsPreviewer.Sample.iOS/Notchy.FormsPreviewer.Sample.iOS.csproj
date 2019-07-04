@@ -138,6 +138,14 @@
       <Project>{70115908-6154-4ED9-8965-F83B45DC351D}</Project>
       <Name>Notchy.FormsPreviewer.Sample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Notchy.FormsPreviewer.iOS\Notchy.FormsPreviewer.iOS.csproj">
+      <Project>{5C4CFDCE-7DC1-44A8-8A6D-87E335D98B43}</Project>
+      <Name>Notchy.FormsPreviewer.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notch.FormsPreviewer.NetStandard\Notch.FormsPreviewer.NetStandard.csproj">
+      <Project>{4F7B75B8-C413-4E38-8529-C744964E3731}</Project>
+      <Name>Notch.FormsPreviewer.NetStandard</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
