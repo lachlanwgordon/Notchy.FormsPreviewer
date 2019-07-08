@@ -1,9 +1,9 @@
-<Project Sdk="MSBuild.Sdk.Extras/2.0.29">
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.29">
 
   <PropertyGroup>
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81;uap10.0.16299</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81;</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
     <!--Feel free to add as many targets as you need below
     netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
@@ -30,21 +30,21 @@
     <DebugType>portable</DebugType>
     
     <!--TODO: Fill these in-->
-    <PackageLicenseUrl>LINK TO LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>LINK TO PROJECT</PackageProjectUrl>
-    <RepositoryUrl>LINK TO PROJECT</RepositoryUrl>
-    <PackageReleaseNotes>RELEASE NOTES</PackageReleaseNotes>
-    <PackageIconUrl>ICON URL</PackageIconUrl>
-    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, NotchyFormsPreviewer</PackageTags>
+    <PackageLicenseUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer</RepositoryUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageTags>xamarin, ios, android, xamarin.forms, plugin, NotchyFormsPreviewer</PackageTags>
     
-    <Title>NotchyFormsPreviewer Plugin for Xamarin and Windows</Title>
-    <Summary>Summary of nuget</Summary>
-    <Description>Plugin Description</Description>
+    <Title>Notchy Forms Previewer for Xamarin Forms iOS Android</Title>
+    
+    <Description>Add notches and corner radii to the Xamarin Forms previewer for speedy design time feedback about how your appp will look on various notched devices.</Description>
     
     
-    <Owners>YOU</Owners>
-    <Authors>YOU</Authors>
-    <Copyright>Copyright 2018</Copyright>
+    <Owners>Lachlan Gordon</Owners>
+    <Authors>Lachlan Gordon</Authors>
+    <Copyright>Copyright 2019</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
