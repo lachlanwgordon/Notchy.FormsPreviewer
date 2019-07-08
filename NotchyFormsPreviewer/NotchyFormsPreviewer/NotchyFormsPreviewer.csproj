@@ -3,15 +3,19 @@
   <PropertyGroup>
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81;</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;</TargetFrameworks>
     <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
+   
     <!--Feel free to add as many targets as you need below
     netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
     For UWP update the version number with a version number you have installed.
     -->
-    <AssemblyName>Plugin.NotchyFormsPreviewer</AssemblyName>
-    <RootNamespace>Plugin.NotchyFormsPreviewer</RootNamespace>
-    <PackageId>Plugin.NotchyFormsPreviewer</PackageId>
+
+     
+
+    <AssemblyName>NotchyFormsPreviewer</AssemblyName>
+    <RootNamespace>NotchyFormsPreviewer</RootNamespace>
+    <PackageId>NotchyFormsPreviewer</PackageId>
     
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -50,7 +54,10 @@
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
     <DebugSymbols>true</DebugSymbols>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+   
   </PropertyGroup>
+
+
   <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -81,9 +88,15 @@
     <Compile Include="**\*.apple.cs" />
   </ItemGroup>
 
+  <ItemGroup><!--<Compile Remove="NotchEffect.shared.cs" />-->
+  
+    <!--<Compile Remove="NotchEffect.shared.cs" />-->
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
   </ItemGroup>
+
   <!--Additional item groups-->
   <!--
   <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) ">
