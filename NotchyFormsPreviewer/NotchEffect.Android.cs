@@ -1,6 +1,7 @@
 ﻿using NotchyFormsPreviewer.Android;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -10,10 +11,21 @@ using Xamarin.Forms.Platform.Android;
 namespace NotchyFormsPreviewer.Android
 {
     public class NotchEffect : PlatformEffect
-    {
+    {         
         protected override void OnAttached()
         {
-            (Element as Page).BackgroundColor = Color.Blue;
+            Debug.WriteLine("android Attached");
+
+            if (Element != null)
+            {
+                var view = Element as VisualElement;
+                if(view != null)
+                {
+                    (Element as VisualElement).BackgroundColor = Color.Blue;
+                }
+
+            }
+
         }
 
         protected override void OnDetached()
