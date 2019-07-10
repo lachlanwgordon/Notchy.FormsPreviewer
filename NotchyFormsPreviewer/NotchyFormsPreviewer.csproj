@@ -3,8 +3,8 @@
   <PropertyGroup>
     <!--Work around so the conditions work below-->
     <TargetFrameworks></TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;</TargetFrameworks>
-    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard1.0;netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">netstandard2.0;MonoAndroid81;Xamarin.iOS10;</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(OS)' != 'Windows_NT' ">netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
    
     <!--Feel free to add as many targets as you need below
     netstandard1.0;netstandard2.0;MonoAndroid81;Xamarin.iOS10;uap10.0.16299;Xamarin.TVOS10;Xamarin.WatchOS10;Xamarin.Mac20;Tizen40
@@ -34,10 +34,10 @@
     <DebugType>portable</DebugType>
     
     <!--TODO: Fill these in-->
-    <PackageLicenseUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer</PackageProjectUrl>
     <RepositoryUrl>https://github.com/lachlanwgordon/Notchy.FormsPreviewer</RepositoryUrl>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>New Release Available</PackageReleaseNotes>
     <PackageIconUrl></PackageIconUrl>
     <PackageTags>xamarin, ios, android, xamarin.forms, plugin, NotchyFormsPreviewer</PackageTags>
     
@@ -49,6 +49,7 @@
     <Owners>Lachlan Gordon</Owners>
     <Authors>Lachlan Gordon</Authors>
     <Copyright>Copyright 2019</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
