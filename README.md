@@ -61,5 +61,7 @@ If you want to see other devices in here, please open a pull request or send me 
 This library is built using VS 2019 for windows using an SDK style project and multi-targeting. At this point in time VS Mac doesn't support multi-targeting. If you want to play around with the code and try custom device sizes you can checkout github.com/lachlanwgordon/NotchExperiment for a self contained app with much of the same code.
 
 ## Blog
-This library was made as part of #XamarinUIJuly, you can read my post at lachlanwgordon.com/xamarinuijuly-notch/ and read a month's worth of excellent posts on Xamarin User Interfaces at https://www.thewissen.io/introducing-xamarin-ui-july/
+This library was made as part of #XamarinUIJuly, you can read my post at lachlanwgordon.com/xamarinuijuly-notch/ and read a month's worth of excellent posts on Xamarin User Interfaces at https://www.thewissen.io/introducing-xamarin-ui-july/ .
 
+![alt text](https://raw.githubusercontent.com/lachlanwgordon/Notchy.FormsPreviewer/master/xamuijuly-1.png
+)
