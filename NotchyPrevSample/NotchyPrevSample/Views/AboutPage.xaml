@@ -13,7 +13,9 @@
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Effects>
-        <prev:NotchEffect/>
+        <prev:NotchEffect
+            Model="{OnPlatform Android=P30, iOS=iPhoneXSMax}"
+            />
     </ContentPage.Effects>
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -30,7 +32,7 @@
         </Grid.RowDefinitions>
         <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                <ContentView Padding="0,22,0,40" VerticalOptions="FillAndExpand">
                     <Image Source="xamarin_logo.png" VerticalOptions="Center" HeightRequest="64" />
                 </ContentView>
             </StackLayout>

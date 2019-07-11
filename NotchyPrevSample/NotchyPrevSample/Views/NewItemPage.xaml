@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prev="clr-namespace:NotchyFormsPreviewer;assembly=NotchyFormsPreviewer"
              mc:Ignorable="d"
              x:Class="NotchyPrevSample.Views.NewItemPage"
              Title="New Item">
@@ -11,7 +12,12 @@
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
         <ToolbarItem Text="Save" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
-    
+    <ContentPage.Effects>
+        <prev:NotchEffect
+            Model="Default"
+            d:Model="{OnPlatform Android=Pixel3XL, iOS=iPhoneXSMax}"
+            />
+    </ContentPage.Effects>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="Text" FontSize="Medium" />
