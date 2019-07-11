@@ -125,8 +125,7 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NotchyFormsPreviewer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="NotchyFormsPreviewer">
       <HintPath>..\..\NotchyFormsPreviewer\bin\Release\xamarin.ios10\NotchyFormsPreviewer.dll</HintPath>
     </Reference>
     <Reference Include="System" />

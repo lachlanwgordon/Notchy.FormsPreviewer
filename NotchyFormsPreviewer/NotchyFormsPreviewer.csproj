@@ -89,13 +89,24 @@
     <Compile Include="**\*.apple.cs" />
   </ItemGroup>
 
-  <ItemGroup><!--<Compile Remove="NotchEffect.shared.cs" />-->
-  
-    <!--<Compile Remove="NotchEffect.shared.cs" />-->
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <None Remove="Device.shared.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Device.shared.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NotchView.Android.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="NotchView.apple.cs" />
   </ItemGroup>
 
   <!--Additional item groups-->

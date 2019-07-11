@@ -1,18 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
-using Xamarin.Forms;
 using System.ComponentModel;
+using Xamarin.Forms;
+using static NotchyFormsPreviewer.Device;
 
 namespace NotchyFormsPreviewer
 {
-    [System.ComponentModel.DesignTimeVisible(true)]
+    [DesignTimeVisible(true)]
     public class NotchEffect : RoutingEffect
     {
         public NotchEffect() : base("NotchyFormsPreviewer.NotchEffect")
         {
             Debug.WriteLine("ContructingRoutingEffect");
         }
+        
+        public PhoneModels Model { get; set; }
+        public Device CustomDevice { get; set; } = new Device();
     }
 }
