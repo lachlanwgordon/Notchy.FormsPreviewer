@@ -14,7 +14,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Effects>
         <prev:NotchEffect
-            Model="{OnPlatform Android=P30, iOS=iPhoneXSMax}"
+            d:Model="{OnPlatform Android=Pixel3XL, iOS=iPhoneXSMax}"
             />
     </ContentPage.Effects>
     <ContentPage.Resources>
